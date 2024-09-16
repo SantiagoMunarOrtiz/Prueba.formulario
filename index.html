@@ -54,9 +54,9 @@
     .then(response => response.json())
     .then(data => {
         if (data.error) {
-            alert(data.error);  // Muestra el error si existe
+            alert(data.error);  
         } else {
-            window.location.href = 'success.html';  // Redirige a la página de éxito
+            window.location.href = 'success.html'; 
         }
     })
     .catch(error => {
