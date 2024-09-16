@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Welcome to Our Platform</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h1>Welcome <br>to Our<br> Platform!</h1>
+            <p>Join our community and enjoy exclusive features</p>
+            <button class="start-btn">Ready to get<br> 
+                started? Join now!</button>
+        </div>
+        <div class="right-section">
+            <div class="signup-form">
+                <div class="language-selector">
+                    <img src="https://img.icons8.com/ios-glyphs/30/ffffff/globe.png" alt="Globe icon">
+                    <span>English</span>
+                    <i class="arrow-down"></i>
+                </div>
+                <h2>Get Started</h2>
+                <!-- Formulario que envía los datos a PHP sin alterar el diseño -->
+                <form action="/procesar_datos.php" method="POST">
+                    <input type="text" name="username" placeholder="Username" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <input type="password" name="confirm_password" placeholder="Confirm password" required>
+                    <div class="terms">
+                        <input type="checkbox" id="terms" name="terms" required class="lot">
+                        <p for="terms">I have read and agree to the Terms and Conditions.</p>
+                    </div>
+                    <button type="submit" class="signup-btn">Sign up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
