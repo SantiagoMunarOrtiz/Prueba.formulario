@@ -266,10 +266,10 @@ h2{
 
 
 @media (max-width: 950px) {
-    /* Ajustar el contenedor para pantallas pequeñas */
+    
     .container {
         flex-direction: column;
-        justify-content: center; /* Centra verticalmente las secciones */
+        justify-content: center; 
         align-items: center;
         height: 100vh;
         padding: 20px;
